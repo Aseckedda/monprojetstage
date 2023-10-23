@@ -1,0 +1,63 @@
+body{
+	margin:0;
+	padding:0;
+	background-color:#e7e6e6d7;
+}
+*{
+	font:12pt "Lucida Sans";
+	color:black	
+}
+.conteneur header{
+	text-align:center;
+	padding:10px;
+	background-color:#19248a;
+	color:#F1FAEE;
+	font:16pt arial;
+}
+form{
+	padding:5px;
+	padding-top:10px;
+	margin:auto;
+	text-align:left;
+	width:440px;
+}
+input{
+	background:white;
+	padding:10px;
+	font:12pt arial;
+	border:solid 1px #888;
+	width:380px;
+	margin-top:6px;
+	margin-bottom:16px;
+	display:block;
+}
+
+input[type="submit"]{
+	background-color:#74d109;
+	color:#FFF;
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+}
+
+.conteneur
+{
+	margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fdfdfd;
+	width: 40%;
+}
+input[type="button"]{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#19248a;
+	color: #fff;
+	padding: 15px;
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+

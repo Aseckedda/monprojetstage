@@ -1,0 +1,19 @@
+body{
+    font-family:"Times New Roman", Times, serif;
+    font-size:20px;
+    text-align:center;
+    background-color:#e7e6e6d7;
+    margin-left: 90px;
+    margin-right: 90px;
+    
+    }
+   
+    table tr td:last-child{
+        width: 250px;
+       
+    }
+   h2{
+    font-weight: bold;
+    color: rgba(2, 62, 243, 0.96);
+   }
+  

@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>Application projet</title>
+	    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <!----css3---->
+        <link rel="stylesheet" href="css/custom.css">
+		
+		
+		<!--google fonts -->
+	
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--google material icon-->
+      <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+      <link href="asset/img/images_adm.png" rel="icon">
+  <link href="asset/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="asset/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="asset/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="asset/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="asset/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="asset/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="asset/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="asset/css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+  
+
+<div class="wrapper">
+
+
+        <div class="body-overlay"></div>
+		
+		<!-------------------------sidebar------------>
+		     <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="img/images_adm.png" class="img-fluid"/><span>ADM Value</span></h3>
+            </div>
+            <ul class="list-unstyled components">
+			<li  class="active">
+                    <a href="tableau_bord_admin.php" class="dashboard"><i class="material-icons">dashboard</i>
+					<span>Tableau de bord</span></a>
+                </li>
+		
+
+                <li class="dropdown">
+                    <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" 
+                    class="dropdown-toggle">
+					<i class="material-icons">extension</i><span>Agents</a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+                    <h6 class="collapse-header">Agents</h6>
+                        <li>
+                            <a href="ajouter_agent.php">Ajouter agent</a>
+                        </li>
+                        <li>
+                            <a href="liste_agent.php">Liste agent</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons">apps</i><span>Projets</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu2">
+                    <h6 class="collapse-header">Projet</h6>
+                        <li>
+                            <a href="ajouter_projet.php">Ajouter projet</a>
+                        </li>
+                        <li>
+                            <a href="liste.php">Liste projet</a>
+                        </li>
+                    </ul>
+                </li>
+				
+							  <li class="dropdown">
+                    <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons">extension</i><span>Affectation</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu4">
+                        <li>
+                            <a href="affecter_projet.php">Affecter un agent</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons">extension</i><span>Profile</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+                        <li>
+                            <a href="profil.html">Profile agent</a>
+                        </li>
+                    </ul>
+				  <li class="dropdown">
+                    <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons">content_copy</i><span>Pages</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu7">
+                        <li>
+                            <a href="inscription.php">Création de compte </a>
+                        </li>
+                        <li>
+                            <a href="login.php">Connexion</a>
+                        </li>
+                        <li>
+                            <a href="deconnexion.php">Déconnexion</a>
+                        </li>
+                    </ul>
+                </li>
+
+           
+        </nav>
+		
+		
+		
+		
+		<!--------page-content---------------->
+		
+		<div id="content">
+		   
+		   <!--top--navbar----design--------->
+		   
+		   <div class="top-navbar">
+		      <div class="xp-topbar">
+
+                <!-- Start XP Row -->
+                <div class="row"> 
+                    <!-- Start XP Col -->
+                    <div class="col-2 col-md-1 col-lg-1 order-2 order-md-1 align-self-center">
+                        <div class="xp-menubar">
+                               <span class="material-icons text-white">signal_cellular_alt
+							   </span>
+                         </div>
+                    </div> 
+                    <!-- End XP Col -->
+
+                    <!-- Start XP Col -->
+                    <div class="col-md-5 col-lg-3 order-3 order-md-2">
+                        <div class="xp-searchbar">
+                            <form>
+                                <div class="input-group">
+                                  <input type="search" class="form-control" 
+								  placeholder="Search">
+                                  <div class="input-group-append">
+                                    <button class="btn" type="submit" 
+									id="button-addon2">Rechercher</button>
+                                  </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End XP Col -->
+
+                    <!-- Start XP Col -->
+                    <div class="col-10 col-md-6 col-lg-8 order-1 order-md-3">
+                        <div class="xp-profilebar text-right">
+							 <nav class="navbar p-0">
+                        <ul class="nav navbar-nav flex-row ml-auto">   
+                            <li class="dropdown nav-item active">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                   <span class="material-icons">notifications</span>
+								   <span class="notification">4</span>
+                               </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Vous avez 5 messages</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You're now friend with Mike</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wish Mary on her birthday!</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">5 warnings in Server Console</a>
+                                    </li>
+                                  
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+								<span class="material-icons">question_answer</span>
+
+								</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" data-toggle="dropdown">
+								<img src="img/ada.jpeg" style="width:40px; border-radius:50%;"/>
+								<span class="xp-user-live"></span>
+								</a>
+								<ul class="dropdown-menu small-menu">
+                                    <li>
+                                        <a href="profil.html">
+										  <span class="material-icons">
+person_outline
+</span>Profile
+
+										</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="material-icons">
+settings
+</span>Parametre</a>
+                                    </li>
+                                    <li>
+                                        <a href="deconnexion.php"><span class="material-icons">
+logout</span>Deconnexion</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+               
+            </nav>
+							
+                        </div>
+                    </div>
+                    <!-- End XP Col -->
+
+                </div> 
+                <!-- End XP Row -->
+
+            </div>
+		     <div class="xp-breadcrumbbar text-center">
+                <h4 class="page-title">Système de gestion d'affectation de projet</h4>  
+                               
+            </div>
+			
+		   </div>
+		   
+		   
+		   
+		   <!--------main-content------------->
+		   
+  <!-- ======= Profile ======= -->
+  <section class="section profile">
+      <div class="row">
+        <div class="col-xl-4">
+
+          <div class="card">
+            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+              <img src="asset/img/ada.jpeg" alt="adama" width=30% height=30% />
+              <h2>Adama Seck</h2>
+              <h3>Conseillère Clientèle</h3>
+             
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-xl-8">
+
+          <div class="card">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
+
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Profile</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Modifier Profile</button>
+                </li>
+                </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                  <h5 class="card-title">A propos</h5>
+                  <p class="small fst-italic">En tant que conseiller client, je crois fermement en l'importance de l'empathie, de la patience et de la communication claire pour répondre aux besoins de nos clients. Mon objectif ultime est de contribuer à la croissance de l'entreprise en veillant à ce que chaque interaction client soit positive et mémorable..</p>
+
+                  <h5 class="card-title">Profile Details</h5>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">Nom et Prénom</div>
+                    <div class="col-lg-9 col-md-8">Adama Seck</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Société</div>
+                    <div class="col-lg-9 col-md-8">ADM Value</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Poste occupé</div>
+                    <div class="col-lg-9 col-md-8">Conseillère Clientèle</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Ville</div>
+                    <div class="col-lg-9 col-md-8">Salé</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Addresse</div>
+                    <div class="col-lg-9 col-md-8">Doha Aboua Sala Route de Kénitra</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Téléphone</div>
+                    <div class="col-lg-9 col-md-8">(212) 699 82 13 98</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Email</div>
+                    <div class="col-lg-9 col-md-8">adamaseck1806@gmail.com</div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+                  <!-- Profile Edit Form -->
+                  <form>
+                    <div class="row mb-3">
+                      <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+                      <div class="col-md-8 col-lg-9">
+                        <img src="asset/img/ada.jpeg" alt="Profile">
+                        
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nom et Prénom</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="fullName" type="text" class="form-control" id="fullName" value="Adama Seck">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="about" class="col-md-4 col-lg-3 col-form-label">A propos</label>
+                      <div class="col-md-8 col-lg-9">
+                        <textarea name="about" class="form-control" id="about" style="height: 100px">En tant que conseiller client, je crois fermement en l'importance de l'empathie, de la patience et de la communication claire pour répondre aux besoins de nos clients. Mon objectif ultime est de contribuer à la croissance de l'entreprise en veillant à ce que chaque interaction client soit positive et mémorable.</textarea>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="company" class="col-md-4 col-lg-3 col-form-label">Société</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="company" type="text" class="form-control" id="company" value="Adm Value">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Job" class="col-md-4 col-lg-3 col-form-label">Poste occupé</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="job" type="text" class="form-control" id="Job" value="Conseillère Clientèle">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Country" class="col-md-4 col-lg-3 col-form-label">Ville</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="country" type="text" class="form-control" id="Country" value="Salé">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Address" class="col-md-4 col-lg-3 col-form-label">Addresse</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="address" type="text" class="form-control" id="Address" value="Doha Aboua Sala Route de Kénitra">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Téléphone</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="phone" type="text" class="form-control" id="Phone" value="(212) 699 82 13 98">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="email" type="email" class="form-control" id="Email" value="adamaseck1806@gmail.com">
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                    </div>
+                  </form><!-- End Profile Edit Form -->
+
+                </div>
+
+
+              </div><!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+    
+  </div>
+</div>
+<!-- Edit Modal HTML -->
+
+			 
+			 <!---footer---->
+			 
+			 
+		</div>
+		
+		<footer class="footer">
+			    <div class="container-fluid">
+				  <div class="footer-in">
+                    <p class="mb-0">Suivi projet 2023</p>
+                </div>
+				</div>
+			 </footer>
+</div>
+</div>
+
+
+<!----------html code compleate----------->
+
+
+
+
+
+
+
+
+  
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="asset/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="asset/vendor/chart.js/chart.umd.js"></script>
+  <script src="asset/vendor/echarts/echarts.min.js"></script>
+  <script src="asset/vendor/quill/quill.min.js"></script>
+  <script src="asset/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="asset/vendor/tinymce/tinymce.min.js"></script>
+  <script src="asset/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="asset/js/main.js"></script>
+   <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery-3.3.1.min.js"></script>
+  
+  
+  <script type="text/javascript">
+        
+		$(document).ready(function(){
+		  $(".xp-menubar").on('click',function(){
+		    $('#sidebar').toggleClass('active');
+			$('#content').toggleClass('active');
+		  });
+		  
+		   $(".xp-menubar,.body-overlay").on('click',function(){
+		     $('#sidebar,.body-overlay').toggleClass('show-nav');
+		   });
+		  
+		});
+		
+</script>
+  
+  
+
+
+
+  </body>
+  
+  </html>
+
+
